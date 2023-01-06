@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js" integrity="sha512-LF8ZB1iTwi4Qvkm4pekHG4a437Y9Af5ZuwbnW4GTbAWQeR2E4KW8WF+xH8b9psevV7wIlDMx1MH9YfPqgKhA/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Space Mono', monospace;
+      }
+
+      #output {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body">
+    <script src="main.js"></script>
+    <div id="output">
+      <div>sensor value: <span id="sensor"></span></div>
+      <div>volts: <span id="volts"></span></div>
+      <div>analogRead: <span id="val"></span></div>
+    </div>
+  </body>
+</html>
